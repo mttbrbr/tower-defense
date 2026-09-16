@@ -44,6 +44,18 @@ This project requires **Godot 4.7** or a compatible version.
 
 `TowerDefense.exe` is also included for Windows.
 
+## Build the RHEL package
+
+The `packaging/` directory contains the RPM setup (spec file, desktop entry, and build script).
+On a RHEL system (or container) with `rpm-build` and Godot 4.x (with Linux/X11 export templates) installed:
+
+```sh
+./packaging/build-rpm.sh
+```
+
+The resulting `.rpm` is written under `build/rpmbuild/RPMS/`. Set `GODOT=/path/to/godot` if the binary is not in `PATH`.
+
+
 ## Development and testing
 
 The pixel-art assets can be regenerated with the scripts in `tools/` (Python and Pillow required). Verification scripts are in `tests/` and can be run with a locally configured Godot test runner.

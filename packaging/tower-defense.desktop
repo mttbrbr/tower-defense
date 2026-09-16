@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Tower Defense
+GenericName=Tower Defense Game
+Comment=Build and upgrade towers, repel enemy waves, and use special powers
+Exec=tower-defense
+Icon=tower-defense
+Terminal=false
+Categories=Game;
+Keywords=game;tower;defense;strategy;godot;
+StartupNotify=false
